@@ -50,6 +50,7 @@ class ShapeTesselator {
         %feature("autodoc", "1");
         ~ShapeTesselator();
         %feature("kwargs") Compute;
+        void SetDeviation(Standard_Real aDeviation);
         void Compute(bool compute_edges=false, float mesh_quality=1.0, bool parallel=false);
         void GetVertex(int ivert, float& x, float& y, float& z);
         void GetNormal(int inorm, float& x, float& y, float& z);
